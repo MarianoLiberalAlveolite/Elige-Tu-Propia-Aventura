@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tituloForm" type="id">tituloForm</item>
+    <item name="dificultad" type="id">dificultad</item>
+    <item name="nombreForm" type="id">nombreForm</item>
+    <item name="tipoFiccion" type="id">tipoFiccion</item>
+    <item name="generoForm" type="id">generoForm</item>
+    <item name="masculino" type="id">masculino</item>
+    <item name="femenino" type="id">femenino</item>
+    <item name="otroRadio" type="id">otro</item>
+    <item name="atributosLabel" type="id">atributosLabel</item>
+    <item name="checkboxFuerza" type="id">checkboxFuerza</item>
+    <item name="checkboxDestreza" type="id">checkboxDestreza</item>
+    <item name="checkboxInteligencia" type="id">checkboxInteligencia</item>
+    <item name="checkboxMagia" type="id">checkboxMagia</item>
+    <item name="startButton" type="id">startButton</item>
+    <item name="loadingProgress" type="id">loadingProgress</item>
+</resources>

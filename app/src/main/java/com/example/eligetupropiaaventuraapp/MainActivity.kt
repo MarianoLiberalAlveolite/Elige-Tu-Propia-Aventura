@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val btnIrAlFormulario = findViewById<Button>(R.id.btnIrAlFormulario)
+        val btnIrAlFormulario = findViewById<Button>(R.id.button_id)
         btnIrAlFormulario.setOnClickListener {
             val intent = Intent(this, FormActivity::class.java)
             startActivity(intent)
