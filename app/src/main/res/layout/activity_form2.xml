@@ -5,6 +5,155 @@
     android:id="@+id/form"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormActivity">
+    tools:context=".FormActivity"
+    android:padding="16dp">
+
+    <!-- Título de la aplicación -->
+    <TextView
+        android:id="@+id/tituloForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crea tu aventura"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Selector de dificultad (Switch) -->
+    <Switch
+        android:id="@+id/dificultad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Modo difícil"
+        app:layout_constraintTop_toBottomOf="@id/tituloForm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para nombre del personaje -->
+    <EditText
+        android:id="@+id/nombreForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del personaje"
+        app:layout_constraintTop_toBottomOf="@id/dificultad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Selección de género literario -->
+    <Spinner
+        android:id="@+id/tipoFiccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nombreForm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Selección de género del personaje -->
+    <RadioGroup
+        android:id="@+id/generoForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tipoFiccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"/>
+
+        <RadioButton
+            android:id="@+id/femenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino"/>
+
+        <RadioButton
+            android:id="@+id/otroRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Otro"/>
+    </RadioGroup>
+
+    <!-- Atributos destacados (CheckBox, máximo 2) -->
+    <TextView
+        android:id="@+id/atributosLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige hasta dos atributos:"
+        app:layout_constraintTop_toBottomOf="@id/generoForm"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxFuerza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuerza"
+        app:layout_constraintTop_toBottomOf="@id/atributosLabel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/checkboxDestreza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destreza"
+        app:layout_constraintTop_toBottomOf="@id/atributosLabel"
+        app:layout_constraintStart_toEndOf="@id/checkboxFuerza"
+        android:layout_marginStart="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxInteligencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inteligencia"
+        app:layout_constraintTop_toBottomOf="@id/checkboxFuerza"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxMagia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magia"
+        app:layout_constraintTop_toBottomOf="@id/checkboxDestreza"
+        app:layout_constraintStart_toEndOf="@id/checkboxInteligencia"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón de lanzamiento -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Comenzar aventura"
+        app:layout_constraintTop_toBottomOf="@id/checkboxInteligencia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"/>
+
+    <!-- Progreso de carga de IA -->
+    <ProgressBar
+        android:id="@+id/loadingProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/startButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
