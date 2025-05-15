@@ -3,4 +3,6 @@
     <string name="elige_tu_aventura">Elige tu Aventura!</string>
     <string name="inicia_tu_viaje">Inicia tu viaje</string>
     <string name="imagen_de_fondo">Imagen de fondo</string>
+    <string name="titulo">titulo</string>
+    <string name="boton_jugar">boton-jugar</string>
 </resources>
