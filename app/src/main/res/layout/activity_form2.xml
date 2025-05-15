@@ -13,7 +13,7 @@
         android:id="@+id/tituloForm"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Crea tu aventura"
+        android:text="@string/crea_tu_aventura"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +26,7 @@
         android:id="@+id/dificultad"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Modo difícil"
+        android:text="@string/modo_dif_cil"
         app:layout_constraintTop_toBottomOf="@id/tituloForm"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         android:id="@+id/nombreForm"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Nombre del personaje"
+        android:hint="@string/nombre_del_personaje"
         app:layout_constraintTop_toBottomOf="@id/dificultad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,19 +70,19 @@
             android:id="@+id/masculino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masculino"/>
+            android:text="@string/masculino"/>
 
         <RadioButton
             android:id="@+id/femenino"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Femenino"/>
+            android:text="@string/femenino"/>
 
         <RadioButton
             android:id="@+id/otro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Otro"/>
+            android:text="@string/otro"/>
     </RadioGroup>
 
     <!-- Atributos destacados (CheckBox, máximo 2) -->
@@ -90,7 +90,7 @@
         android:id="@+id/atributosLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Elige hasta dos atributos:"
+        android:text="@string/elige_hasta_dos_atributos"
         app:layout_constraintTop_toBottomOf="@id/generoForm"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
@@ -100,7 +100,7 @@
         android:id="@+id/checkboxFuerza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fuerza"
+        android:text="@string/fuerza"
         app:layout_constraintTop_toBottomOf="@id/atributosLabel"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -108,7 +108,7 @@
         android:id="@+id/checkboxDestreza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Destreza"
+        android:text="@string/destreza"
         app:layout_constraintTop_toBottomOf="@id/atributosLabel"
         app:layout_constraintStart_toEndOf="@id/checkboxFuerza"
         android:layout_marginStart="16dp"/>
@@ -117,7 +117,7 @@
         android:id="@+id/checkboxInteligencia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inteligencia"
+        android:text="@string/inteligencia"
         app:layout_constraintTop_toBottomOf="@id/checkboxFuerza"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="8dp"/>
@@ -126,7 +126,7 @@
         android:id="@+id/checkboxMagia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Magia"
+        android:text="@string/magia"
         app:layout_constraintTop_toBottomOf="@id/checkboxDestreza"
         app:layout_constraintStart_toEndOf="@id/checkboxInteligencia"
         android:layout_marginStart="16dp"
@@ -137,7 +137,7 @@
         android:id="@+id/startButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Comenzar aventura"
+        android:text="@string/comenzar_aventura"
         app:layout_constraintTop_toBottomOf="@id/checkboxInteligencia"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

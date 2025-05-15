@@ -5,4 +5,16 @@
     <string name="imagen_de_fondo">Imagen de fondo</string>
     <string name="titulo">titulo</string>
     <string name="boton_jugar">boton-jugar</string>
+    <string name="crea_tu_aventura">Crea tu aventura</string>
+    <string name="elige_hasta_dos_atributos">Elige hasta dos atributos:</string>
+    <string name="fuerza">Fuerza</string>
+    <string name="destreza">Destreza</string>
+    <string name="inteligencia">Inteligencia</string>
+    <string name="comenzar_aventura">Comenzar aventura</string>
+    <string name="nombre_del_personaje">Nombre del personaje</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="otro">Otro</string>
+    <string name="modo_dif_cil">Modo difícil</string>
+    <string name="magia">Magia</string>
 </resources>
