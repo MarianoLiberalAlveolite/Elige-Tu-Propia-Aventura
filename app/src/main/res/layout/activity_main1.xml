@@ -11,41 +11,39 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/fondop"
+        android:contentDescription="@string/imagen_de_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/fondo"
-        android:contentDescription="@string/imagen_de_fondo"/>
+        app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ImageView
+        android:id="@+id/titulo"
+        android:layout_width="243dp"
+        android:layout_height="421dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="296dp"
+        android:contentDescription="@string/titulo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/text_id"
-        android:text="@string/elige_tu_aventura"
-        android:textColor="@color/orange"
-        android:textSize="20sp"
-        />
+        app:srcCompat="@drawable/titulo" />
 
-    <Button
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button_id"
-        android:text="@string/inicia_tu_viaje"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+    <ImageButton
+        android:id="@+id/btnGoToForm"
+        android:layout_width="135dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/fondob"
+        android:contentDescription="@string/boton_jugar"
         android:paddingLeft="30dp"
+        android:paddingTop="20dp"
         android:paddingRight="30dp"
-        android:layout_marginBottom="30dp"
-        android:background="@color/orange"
-        />
-
-
-
+        android:paddingBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
