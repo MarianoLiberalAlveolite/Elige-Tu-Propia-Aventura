@@ -43,9 +43,11 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dificultad"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
@@ -59,6 +61,7 @@
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nombreForm"
         app:layout_constraintTop_toBottomOf="@id/tituloForm" />
 
     <!-- Campo para nombre del personaje -->
@@ -105,7 +108,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tipoFiccion">
+        app:layout_constraintTop_toBottomOf="@id/tipoFiccion"
+        app:layout_constraintVertical_chainStyle="spread">
 
         <RadioButton
             android:id="@+id/masculino"
@@ -142,8 +146,9 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/generoForm" />
-
+        app:layout_constraintTop_toBottomOf="@id/generoForm"
+        />
+    constraintlayout
     <CheckBox
         android:id="@+id/checkboxDestreza"
         android:layout_width="wrap_content"
@@ -153,7 +158,8 @@
         android:text="@string/destreza"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/checkboxFuerza"
-        app:layout_constraintTop_toBottomOf="@id/atributosLabel" />
+        app:layout_constraintTop_toBottomOf="@id/atributosLabel"
+        app:layout_constraintVertical_chainStyle="spread"/>
 
     <CheckBox
         android:id="@+id/checkboxFuerza"
