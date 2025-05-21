@@ -10,16 +10,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 class FormActivity : AppCompatActivity() {
 
-    private lateinit var gestorGiroscopio: GestorGiroscopio
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form2)
-
-        gestorGiroscopio = GestorGiroscopio(this) { x, y, z ->
-            // manejo de datos
-        }
-
 
         val nombreEditText = findViewById<EditText>(R.id.nombreForm)
         val generoSpinner = findViewById<Spinner>(R.id.tipoFiccion)
@@ -62,6 +55,17 @@ class FormActivity : AppCompatActivity() {
             toast.show()
 
             // Aquí sigue el flujo: validación, generación de prompt, navegación, etc.
+
+            ConsultaGemini.generarHistoria(
+                prompt = "Escribe una historia de aventuras protagonizada por un dragón amable.",
+                onResultado = { historiaGenerada ->
+                    // Aqui el String generado se lo ponemos al intent
+                },
+                onError = { mensajeError ->
+                    Toast.makeText(this, mensajeError, Toast.LENGTH_LONG).show()
+                }
+            )
+
         }
     }
 
