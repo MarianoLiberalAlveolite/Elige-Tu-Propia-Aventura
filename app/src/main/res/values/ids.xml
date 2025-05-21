@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="tituloForm" type="id">tituloForm</item>
-    <item name="dificultad" type="id">dificultad</item>
-    <item name="nombreForm" type="id">nombreForm</item>
-    <item name="tipoFiccion" type="id">tipoFiccion</item>
-    <item name="generoForm" type="id">generoForm</item>
-    <item name="masculino" type="id">masculino</item>
-    <item name="femenino" type="id">femenino</item>
-    <item name="otroRadio" type="id">otro</item>
-    <item name="atributosLabel" type="id">atributosLabel</item>
-    <item name="checkboxFuerza" type="id">checkboxFuerza</item>
-    <item name="checkboxDestreza" type="id">checkboxDestreza</item>
-    <item name="checkboxInteligencia" type="id">checkboxInteligencia</item>
-    <item name="checkboxMagia" type="id">checkboxMagia</item>
-    <item name="startButton" type="id">startButton</item>
-    <item name="loadingProgress" type="id">loadingProgress</item>
+    <item name="tituloForm"         type="id"/>
+    <item name="dificultad"         type="id"/>
+    <item name="nombreForm"         type="id"/>
+    <item name="tipoFiccion"        type="id"/>
+    <item name="generoForm"         type="id"/>
+    <item name="masculino"          type="id"/>
+    <item name="femenino"           type="id"/>
+    <item name="otroRadio"          type="id"/>
+    <item name="atributosLabel"     type="id"/>
+    <item name="checkboxFuerza"     type="id"/>
+    <item name="checkboxDestreza"   type="id"/>
+    <item name="checkboxInteligencia" type="id"/>
+    <item name="checkboxMagia"      type="id"/>
+    <item name="startButton"        type="id"/>
+    <item name="loadingProgress"    type="id"/>
 </resources>

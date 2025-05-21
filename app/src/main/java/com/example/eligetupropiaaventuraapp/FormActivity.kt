@@ -1,7 +1,10 @@
 package com.example.eligetupropiaaventuraapp
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
+import android.view.View
+import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
@@ -56,13 +59,26 @@ class FormActivity : AppCompatActivity() {
 
     private fun configurarSpinner(spinner: Spinner) {
         val generos = arrayOf("Fantasía", "Ciencia Ficción", "Terror", "Aventura")
-        val adapter = ArrayAdapter(
+
+        val adapter = object : ArrayAdapter<String>(
             this,
             android.R.layout.simple_spinner_item,
             generos
-        ).apply {
-            setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        ) {
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getView(position, convertView, parent)
+                (view as TextView).setTextColor(Color.WHITE) // Texto cuando NO está desplegado
+                return view
+            }
+
+            override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val view = super.getDropDownView(position, convertView, parent)
+                (view as TextView).setTextColor(Color.BLACK) // Texto del desplegable
+                return view
+            }
         }
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter
         spinner.setSelection(0, false)
     }

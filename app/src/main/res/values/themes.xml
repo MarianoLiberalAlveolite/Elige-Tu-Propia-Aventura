@@ -3,6 +3,11 @@
     <style name="Base.Theme.EligeTuPropiaAventuraApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        Pobla el fondo de todas las ventanas de app con el mismo fondo
+<!--        <item name="android:windowBackground">@drawable/splash_background</item>-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
     </style>
 
     <style name="Theme.EligeTuPropiaAventuraApp" parent="Base.Theme.EligeTuPropiaAventuraApp" />
