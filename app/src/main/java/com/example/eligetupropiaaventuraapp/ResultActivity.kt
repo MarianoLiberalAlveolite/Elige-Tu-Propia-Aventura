@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//        SCREEN_ORIENTATION_FULL_SENSOR: La actividad responde a todas las orientaciones posibles del dispositivo, usando el sensor.
+//        setRequestedOrientation(...): Fija la orientación preferida de la actividad en tiempo de ejecución.
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
         setContentView(R.layout.activity_result3) // Asegúrate de tener el layout correcto
 

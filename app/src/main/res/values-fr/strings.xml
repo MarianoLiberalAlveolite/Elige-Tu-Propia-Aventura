@@ -17,4 +17,5 @@
     <string name="modo_dif_cil">Mode Difficile</string>
     <string name="magia">Magie</string>
     <string name="label_include_details">Inclure des détails supplémentaires</string>
+    <string name="prompt_aventura">Crée une aventure pour un personnage nommé %1$s, genre %2$s, dans un monde de %3$s, difficulté %4$s, avec les attributs : %5$s. Limite à 40 mots.</string>
 </resources>

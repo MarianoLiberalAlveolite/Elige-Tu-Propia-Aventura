@@ -15,6 +15,7 @@ class FormActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Permite que la actividad responda a todas las orientaciones físicas del dispositivo
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
         setContentView(R.layout.activity_form2) // Asigna el layout de la actividad
 
@@ -73,8 +74,15 @@ class FormActivity : AppCompatActivity() {
             val resumen = "Nombre: $nombre\nGénero: $genero\nFicción: $tipoFiccion\nDificultad: $dificultad\nAtributos: ${atributosSeleccionados.joinToString(", ")}"
             Toast.makeText(this, resumen, Toast.LENGTH_LONG).show()
 
-            // Prepara el prompt para la IA con los datos recogidos
-            val prompt = "Crea una aventura para un personaje llamado $nombre, género $genero, en un mundo de $tipoFiccion, dificultad $dificultad, con los atributos: ${atributosSeleccionados.joinToString(", ")}. Que sea de 40 palabras."
+            // Prepara el prompt con los datos recogidos localizado
+            val prompt = getString(
+                R.string.prompt_aventura,
+                nombre,
+                genero,
+                tipoFiccion,
+                dificultad,
+                atributosSeleccionados.joinToString(", ")
+            )
 
             // Llama a la función para generar la historia y mostrarla en la siguiente pantalla
             generarHistoriaYMostrar(prompt)
