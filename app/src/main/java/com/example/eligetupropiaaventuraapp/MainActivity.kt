@@ -1,6 +1,7 @@
 package com.example.eligetupropiaaventuraapp
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageButton
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FormActivity::class.java)
             startActivity(intent)
         }
+        
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR)
     }
 
 }
