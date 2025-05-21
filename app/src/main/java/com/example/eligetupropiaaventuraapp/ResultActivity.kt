@@ -5,8 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class ResultActivity : AppCompatActivity() {
-<<<<<<< Updated upstream
-=======
+
     private lateinit var gestorGiroscopio: GestorGiroscopio
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +15,4 @@ class ResultActivity : AppCompatActivity() {
 
         gestorGiroscopio = GestorGiroscopio(this) { x, y, z -> }
     }
->>>>>>> Stashed changes
 }
