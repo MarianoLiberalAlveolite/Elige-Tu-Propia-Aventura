@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import kotlin.math.abs
 
 
+
 class MainActivity : AppCompatActivity() {
 
     private var toastMostrado = false
