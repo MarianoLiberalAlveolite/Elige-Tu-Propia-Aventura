@@ -148,7 +148,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/generoForm"
         />
-    constraintlayout
+
     <CheckBox
         android:id="@+id/checkboxDestreza"
         android:layout_width="wrap_content"
