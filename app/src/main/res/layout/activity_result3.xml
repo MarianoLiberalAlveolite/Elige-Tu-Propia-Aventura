@@ -24,4 +24,23 @@
         app:srcCompat="@drawable/fondo_form"
         tools:visibility="visible" />
 
+    <TextView
+        android:id="@+id/historia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#AAFFFFFF"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:maxLines="15"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Aquí aparecerá la historia generada..." />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
