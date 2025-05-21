@@ -56,9 +56,7 @@ class FormActivity : AppCompatActivity() {
             toast.show()
             val atributosAventura = toast.toString()
             val prompt = "Crea una aventura con los siguientes atributos: $atributosAventura; que sea de 40 palabras y que sea de $dificultad."
-            generarHistoriaYMostrar(prompt);
-            // Aquí sigue el flujo: validación, generación de prompt, navegación, etc.
-            generarHistoriaYMostrar("a")
+            generarHistoriaYMostrar(prompt)
         }
     }
 
