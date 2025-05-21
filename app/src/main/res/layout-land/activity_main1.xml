@@ -9,6 +9,7 @@
 
 
     <ImageView
+<<<<<<< HEAD
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/fondop"
@@ -20,30 +21,63 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+=======
+        android:layout_width="731dp"
+        android:layout_height="415dp"
+        android:background="@drawable/fondo_h"
+        android:contentDescription="@string/imagen_de_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+>>>>>>> 7128fecb4f05ebfd193e4be729d27d437969bca6
 
     <ImageView
         android:id="@+id/titulo"
         android:layout_width="243dp"
         android:layout_height="421dp"
+<<<<<<< HEAD
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="296dp"
         android:contentDescription="@string/titulo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+=======
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/titulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+>>>>>>> 7128fecb4f05ebfd193e4be729d27d437969bca6
         app:srcCompat="@drawable/titulo" />
 
     <ImageButton
         android:id="@+id/btnGoToForm"
         android:layout_width="135dp"
         android:layout_height="67dp"
+<<<<<<< HEAD
         android:layout_marginEnd="136dp"
         android:layout_marginBottom="28dp"
+=======
+>>>>>>> 7128fecb4f05ebfd193e4be729d27d437969bca6
         android:background="@drawable/fondob"
         android:contentDescription="@string/boton_jugar"
         android:paddingLeft="30dp"
         android:paddingTop="20dp"
+<<<<<<< HEAD
         android:paddingBottom="20dp"
         android:paddingRight="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+=======
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.929" />
+>>>>>>> 7128fecb4f05ebfd193e4be729d27d437969bca6
 </androidx.constraintlayout.widget.ConstraintLayout>

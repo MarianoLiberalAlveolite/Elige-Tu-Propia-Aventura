@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -54,5 +55,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"/>
+=======
+<!--    Boton para regresar a la pantalla anterior-->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 7128fecb4f05ebfd193e4be729d27d437969bca6
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,8 +17,12 @@
     <string name="otro">Otro</string>
     <string name="modo_dif_cil">Modo difícil</string>
     <string name="magia">Magia</string>
+<<<<<<< HEAD
     <string name="label_include_details">Incluir detalles adicionales</string>
     <string name="prompt_aventura">Crea una aventura para un personaje llamado %1$s, género %2$s, en un mundo de %3$s, dificultad %4$s, con los atributos: %5$s. Que sea de 40 palabras.</string>
     <string name="volver_al_formulario">Volver</string>
 
+=======
+    <string name="regresar">Regresar</string>
+>>>>>>> 7128fecb4f05ebfd193e4be729d27d437969bca6
 </resources>

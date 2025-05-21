@@ -33,6 +33,17 @@
         app:srcCompat="@drawable/fondo_form"
         tools:visibility="visible" />
 
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tituloForm"
         android:layout_width="317dp"
@@ -43,12 +54,12 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/dificultad"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <Switch
         android:id="@+id/dificultad"
@@ -201,12 +212,12 @@
         android:id="@+id/startButton"
         android:layout_width="348dp"
         android:layout_height="49dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="@color/purple_500"
         android:text="@string/comenzar_aventura"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkboxInteligencia" />
 

@@ -1,6 +1,5 @@
 package com.example.eligetupropiaaventuraapp
 
-import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.Button
@@ -8,8 +7,11 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class ResultActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_result3)
+
         // Permite todas las orientaciones físicas del dispositivo
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR)
         setContentView(R.layout.activity_result3) // Usa tu layout correcto
@@ -21,13 +23,14 @@ class ResultActivity : AppCompatActivity() {
         val textViewHistoria = findViewById<TextView>(R.id.historia)
         textViewHistoria.text = historiaGenerada
 
-        // Botón para volver al formulario
-        val botonVolver = findViewById<Button>(R.id.botonVolver)
+        val botonVolver = findViewById<Button>(R.id.btnVolver)
+
+        // boton que regresa a la pantalla anterior
         botonVolver.setOnClickListener {
-            // volver explícitamente al formulario (por si quieres reiniciar el formulario)
-            val intent = Intent(this, FormActivity::class.java)
-            startActivity(intent)
-            finish()
+            finish();
         }
+
     }
+
+
 }
