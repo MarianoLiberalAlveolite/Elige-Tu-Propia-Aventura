@@ -33,17 +33,6 @@
         app:srcCompat="@drawable/fondo_form"
         tools:visibility="visible" />
 
-    <Button
-        android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/regresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tituloForm"
         android:layout_width="317dp"
@@ -92,8 +81,6 @@
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dificultad" />
-
-
 
     <!-- Atributos destacados (CheckBox, máximo 2) -->
 
@@ -206,7 +193,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkboxFuerza" />
 
-    <!-- Progreso de carga de IA -->
 
     <Button
         android:id="@+id/startButton"
@@ -221,6 +207,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/checkboxInteligencia" />
 
+    <!-- Progreso de carga de IA -->
+
     <ProgressBar
         android:id="@+id/loadingProgress"
         android:layout_width="wrap_content"
@@ -230,6 +218,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/startButton" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

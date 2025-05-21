@@ -60,12 +60,7 @@ class FormActivity : AppCompatActivity() {
             val genero = findViewById<RadioButton>(generoId)?.text?.toString() ?: ""
             val tipoFiccion = generoSpinner.selectedItem.toString()
             val dificultad = if (dificultadSwitch.isChecked) "difícil" else "normal"
-            val botonVolver = findViewById<Button>(R.id.btnVolver)
 
-            // boton que regresa a la pantalla anterior
-            botonVolver.setOnClickListener {
-                finish();
-            }
 
 
             // Recoge los atributos seleccionados por el usuario
