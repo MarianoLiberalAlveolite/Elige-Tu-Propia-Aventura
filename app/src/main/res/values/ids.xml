@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="tituloForm"         type="id"/>
+<!--    <item name="btnVolver"         type="id"/>-->
     <item name="dificultad"         type="id"/>
     <item name="nombreForm"         type="id"/>
     <item name="tipoFiccion"        type="id"/>
