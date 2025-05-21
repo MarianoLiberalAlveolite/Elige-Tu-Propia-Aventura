@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
 class FormActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,19 @@ class FormActivity : AppCompatActivity() {
 
         configurarSpinner(generoSpinner)
         setupCheckBoxLimit(checkboxFuerza, checkboxDestreza, checkboxInteligencia, checkboxMagia, maxChecked = 2)
+
+        // Guarda el fondo original
+        val defaultBackground = nombreEditText.background
+
+        nombreEditText.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                // Cambiar color cuando recibe el foco
+                nombreEditText.setBackgroundColor(ContextCompat.getColor(this, R.color.orange))
+            } else {
+                // Restaurar fondo original cuando pierde el foco
+                nombreEditText.background = defaultBackground
+            }
+        }
 
         startButton.setOnClickListener {
             val nombre = nombreEditText.text.toString()
