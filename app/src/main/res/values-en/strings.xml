@@ -18,4 +18,5 @@
     <string name="label_include_details">Include additional details</string>
     <string name="prompt_aventura">Create an adventure for a character named %1$s, gender %2$s, in a world of %3$s, difficulty %4$s, with the attributes: %5$s. Make it 40 words long.</string>
     <string name="volver_al_formulario">Back to form</string>
+    <string name="regresar">Back</string>
 </resources>
