@@ -10,7 +10,7 @@ object ConsultaGemini {
     private val gson = Gson()
 
     fun generarHistoria(prompt: String, onResultado: (String) -> Unit, onError: (String) -> Unit) {
-        val url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${BuildConfig.GEMINI_API_KEY}"
+        val url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${BuildConfig.GEMINI_API_KEY}"
 
         val cuerpoJson = """
             {
