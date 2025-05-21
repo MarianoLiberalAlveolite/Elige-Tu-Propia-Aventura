@@ -1,5 +1,6 @@
 package com.example.eligetupropiaaventuraapp
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
@@ -55,17 +56,7 @@ class FormActivity : AppCompatActivity() {
             toast.show()
 
             // Aquí sigue el flujo: validación, generación de prompt, navegación, etc.
-
-            ConsultaGemini.generarHistoria(
-                prompt = "Escribe una historia de aventuras protagonizada por un dragón amable.",
-                onResultado = { historiaGenerada ->
-                    // Aqui el String generado se lo ponemos al intent
-                },
-                onError = { mensajeError ->
-                    Toast.makeText(this, mensajeError, Toast.LENGTH_LONG).show()
-                }
-            )
-
+            generarHistoriaYMostrar("a")
         }
     }
 
@@ -108,5 +99,20 @@ class FormActivity : AppCompatActivity() {
             }
         }
         checkBoxes.forEach { it.setOnCheckedChangeListener(listener) }
+    }
+
+    private fun generarHistoriaYMostrar(prompt: String) {
+        ConsultaGemini.generarHistoria(
+            prompt = prompt,
+            onResultado = { historiaGenerada ->
+                // Crear el intent y pasar la historia generada como extra
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra("historia_generada", historiaGenerada)
+                startActivity(intent)
+            },
+            onError = { mensajeError ->
+                Toast.makeText(this, mensajeError, Toast.LENGTH_LONG).show()
+            }
+        )
     }
 }
