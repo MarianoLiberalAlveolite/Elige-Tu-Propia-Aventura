@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ChooseYourOwnAdventureApp</string> <string name="elige_tu_aventura">Choose Your Adventure!</string>
+    <string name="inicia_tu_viaje">Start Your Journey</string>
+    <string name="imagen_de_fondo">Background image</string>
+    <string name="titulo">Title</string>
+    <string name="boton_jugar">Play Button</string> <string name="crea_tu_aventura">Create Your Adventure</string>
+    <string name="elige_hasta_dos_atributos">Choose up to two attributes:</string>
+    <string name="fuerza">Strength</string>
+    <string name="destreza">Dexterity</string>
+    <string name="inteligencia">Intelligence</string>
+    <string name="comenzar_aventura">Start Adventure</string>
+    <string name="nombre_del_personaje">Character\'s name</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
+    <string name="otro">Other</string>
+    <string name="modo_dif_cil">Hard Mode</string>
+    <string name="magia">Magic</string>
+    <string name="label_include_details">Include additional details</string>
+    <string name="prompt_aventura">Create an adventure for a character named %1$s, gender %2$s, in a world of %3$s, difficulty %4$s, with the attributes: %5$s. Make it 40 words long.</string>
+    <string name="volver_al_formulario">Back to form</string>
+    <string name="regresar">Back</string>
+</resources>

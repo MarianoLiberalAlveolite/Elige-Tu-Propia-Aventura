@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tituloForm"         type="id"/>
+<!--    <item name="btnVolver"         type="id"/>-->
+    <item name="dificultad"         type="id"/>
+    <item name="nombreForm"         type="id"/>
+    <item name="tipoFiccion"        type="id"/>
+    <item name="generoForm"         type="id"/>
+    <item name="masculino"          type="id"/>
+    <item name="femenino"           type="id"/>
+    <item name="otroRadio"          type="id"/>
+    <item name="atributosLabel"     type="id"/>
+    <item name="checkboxFuerza"     type="id"/>
+    <item name="checkboxDestreza"   type="id"/>
+    <item name="checkboxInteligencia" type="id"/>
+    <item name="checkboxMagia"      type="id"/>
+    <item name="startButton"        type="id"/>
+    <item name="loadingProgress"    type="id"/>
+    <item name="imageView"          type="id"/>
+    <item name="historia"           type="id"/>
+    <item name="botonVolver"        type="id"/>
+</resources>
