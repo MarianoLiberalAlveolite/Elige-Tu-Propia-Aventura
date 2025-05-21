@@ -15,4 +15,7 @@
     <item name="checkboxMagia"      type="id"/>
     <item name="startButton"        type="id"/>
     <item name="loadingProgress"    type="id"/>
+    <item name="imageView"          type="id"/>
+    <item name="historia"           type="id"/>
+    <item name="botonVolver"        type="id"/>
 </resources>

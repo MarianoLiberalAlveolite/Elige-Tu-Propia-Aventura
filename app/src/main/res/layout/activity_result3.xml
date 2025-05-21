@@ -43,4 +43,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Aquí aparecerá la historia generada..." />
 
+    <Button
+        android:id="@+id/botonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver_al_formulario"
+        app:layout_constraintTop_toBottomOf="@id/historia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

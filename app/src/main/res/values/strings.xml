@@ -19,5 +19,6 @@
     <string name="magia">Magia</string>
     <string name="label_include_details">Incluir detalles adicionales</string>
     <string name="prompt_aventura">Crea una aventura para un personaje llamado %1$s, género %2$s, en un mundo de %3$s, dificultad %4$s, con los atributos: %5$s. Que sea de 40 palabras.</string>
+    <string name="volver_al_formulario">Volver</string>
 
 </resources>
