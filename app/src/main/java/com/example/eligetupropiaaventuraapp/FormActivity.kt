@@ -9,9 +9,17 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
 class FormActivity : AppCompatActivity() {
+
+    private lateinit var gestorGiroscopio: GestorGiroscopio
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form2)
+
+        gestorGiroscopio = GestorGiroscopio(this) { x, y, z ->
+            // manejo de datos
+        }
+
 
         val nombreEditText = findViewById<EditText>(R.id.nombreForm)
         val generoSpinner = findViewById<Spinner>(R.id.tipoFiccion)
