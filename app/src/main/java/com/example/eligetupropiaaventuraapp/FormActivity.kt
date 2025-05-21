@@ -1,5 +1,6 @@
 package com.example.eligetupropiaaventuraapp
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
@@ -13,11 +14,16 @@ class FormActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_form2)
 
+
+
+
         val nombreEditText = findViewById<EditText>(R.id.nombreForm)
         val generoSpinner = findViewById<Spinner>(R.id.tipoFiccion)
         val generoRadioGroup = findViewById<RadioGroup>(R.id.generoForm)
         val dificultadSwitch = findViewById<Switch>(R.id.dificultad)
         val startButton = findViewById<Button>(R.id.startButton)
+        val botonVolver = findViewById<Button>(R.id.btnVolver)
+
 
         // Referencia a los CheckBox de atributos
         val checkboxFuerza = findViewById<CheckBox>(R.id.checkboxFuerza)
@@ -54,7 +60,15 @@ class FormActivity : AppCompatActivity() {
             toast.show()
 
             // Aquí sigue el flujo: validación, generación de prompt, navegación, etc.
+
         }
+
+        // boton que regresa a la pantalla anterior
+        botonVolver.setOnClickListener {
+            finish();
+        }
+
+
     }
 
     private fun configurarSpinner(spinner: Spinner) {
@@ -97,4 +111,6 @@ class FormActivity : AppCompatActivity() {
         }
         checkBoxes.forEach { it.setOnCheckedChangeListener(listener) }
     }
+
+
 }
